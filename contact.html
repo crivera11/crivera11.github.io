@@ -114,61 +114,6 @@
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
 
-	<SCRIPT LANGUAGE="JAVASCRIPT">
-<!-- hide this script tag's contents from old browsers
-
-function ClearForm(form){
-
-    form.car_miles.value = "";
-    form.mpg.value = "";
-    form.electric_month.value = "";
-    form.gas_month.value = "";
-	
-}
-
-function bmi(weight, height) {
-
-          bmindx=weight/eval(height*height);
-          return bmindx;
-}
-
-function checkform(form) {
-
-
-    	 if (parseFloat(form.mpg.value) <= 0||
-                parseFloat(form.mpg.value) >=500||
-                parseFloat(form.car_miles.value) < 0||
-                parseFloat(form.car_miles.value) >=5000000){
-                alert("\nPlease enter values that are more believable.");
-                ClearForm(form);
-                return false;
-       }
-       return true;
-return meaty;
-}
-
-
-function computeform(form) {
-
- 
-
-       if (checkform(form)) {
-
-		var meaty = document.getElementById("meat_amount").value;
-      	var wastey = document.getElementById("recycle").value;
-      	var energy = (((form.electric_month.value*104.348)+(form.gas_month.value*128.596))/(form.number_family.value*1));
- 	
-
-       yourresults= Math.round((((form.car_miles.value/form.mpg.value)*19.42)+(.5*form.miles_flown.value))+(1*meaty)+(1*energy)+(1*wastey));
-       document.getElementById("finalfootprint").innerHTML = yourresults + " pounds of CO2/year";
-
-       
-
-       }
-       return;
-}
- // -- done hiding from old browsers -->
-</SCRIPT>
 
   </body>
 </html>
