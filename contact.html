@@ -73,15 +73,17 @@
 	 	<div class="row">
 	 		<div class="col-lg-8">
 	 			<h4>Get help by telling us what you need and what you can offer.</h4><br>
+	 		
 	 			<div class="hline"></div><br><br>
-		 			<form role="form">
+	 			
+<FORM NAME="BMI" method=POST>
 					  <div class="form-group">
 					    <label for="InputName1">Name</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1">
+					    <input type="name" class="form-control" id="name">
 					  </div>
 					  <div class="form-group">
 					    <label for="InputEmail1">Phone Number</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1">
+					    <input type="email" class="form-control" id="email">
 					  </div>
 					  <div class="form-group">
 					    <label for="InputSubject1">I am looking for</label>
@@ -91,7 +93,11 @@
 					  	<label for="message1">I can offer</label>
 					  	<textarea class="form-control" id="message1" rows="3"></textarea>
 					  </div>
-					  <button type="submit" class="btn btn-theme">Submit</button>
+					  
+ <INPUT TYPE="button"  VALUE="Submit" onClick="computeform(this.form)"  class="btn btn-theme">
+
+          <h4 ><label class=question id="area"> </label> </h4>
+
 					</form>
 			</div><! --/col-lg-8 -->
 	 		
@@ -112,6 +118,28 @@
 	<script src="assets/js/jquery.prettyPhoto.js"></script>
   	<script src="assets/js/jquery.isotope.min.js"></script>
   	<script src="assets/js/custom.js"></script>
+	
+	<SCRIPT LANGUAGE="JAVASCRIPT">
+<!-- hide this script tag's contents from old browsers
+
+
+
+function computeform(form) {
+
+ 
+
+       if (checkform(form)) {
+
+		
+       document.getElementById("area").innerHTML =  ;
+
+       
+
+       }
+       return;
+}
+ // -- done hiding from old browsers -->
+</SCRIPT>
 
 
   </body>
