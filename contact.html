@@ -75,30 +75,49 @@
 	 			<h4>Get help by telling us what you need and what you can offer.</h4><br>
 	 		
 	 			<div class="hline"></div><br><br>
+<!-- Begin Response-O-Matic Form -->
+<!-- DO NOT EDIT YOUR FORM HERE, PLEASE LOG IN AND EDIT AT RESPONSE-O-MATIC.COM -->
+
+
+
+
 	 			
-<FORM NAME="BMI" method=POST>
+<form enctype="multipart/form-data" method="post" action="http://www.response-o-matic.com/mail.php" accept-charset="UTF-8">
+	<div>
+		<input type="hidden" name="acctid" id="acctid" value="i2g7w943288t7g0i" />
+		<input type="hidden" name="formid" id="formid" value="1264669" />
+		<input type="hidden" name="required_vars" id="required_vars" value="name" />
+	</div>
 					  <div class="form-group">
 					    <label for="InputName1">Name</label>
-					    <input type="name" class="form-control" id="name">
+					    <input type="text" class="form-control" name="name" id="name">
 					  </div>
 					  <div class="form-group">
 					    <label for="InputEmail1">Phone Number</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1">
+					    <input type="text" class="form-control" name="field-57d1fef8591363e" id="field-57d1fef8591363e" >
 					  </div>
 					  <div class="form-group">
 					    <label for="InputSubject1">I am looking for</label>
-					    <input type="email" class="form-control" id="exampleInputEmail1">
+					    <input type="text" class="form-control" name="field-428351e8e7ea5ec" id="field-428351e8e7ea5ec" >
 					  </div>
 					  <div class="form-group">
 					  	<label for="message1">I can offer</label>
-					  	<textarea class="form-control" id="message1" rows="3"></textarea>
+					  	<textarea class="form-control" name="field-cb1d02a3ad4b780" id="field-cb1d02a3ad4b780"  rows="3"></textarea>
 					  </div>
 					  
- <INPUT TYPE="button"  VALUE="Submit" onClick="computeform(this.form)"  class="btn btn-theme">
+<input type="submit" value=" Submit Form " class="btn btn-theme"/>
 
-          <h4 ><label class=question id="area"> </label> </h4>
+         
 
 					</form>
+
+
+
+
+
+
+
+
 			</div><! --/col-lg-8 -->
 	 		
 	 		
@@ -128,15 +147,18 @@ function computeform(form) {
 
  
 
-       if (checkform(form)) {
-
+      var name =  form.name.value;
+		var phone =  form.phone.value;
+		var message1 =  form.message1.value;
+		var message2 =  form.message2.value;
 		
-       document.getElementById("area").innerHTML =  ;
+		
+       document.write(name + phone + message1 + message2);
+
 
        
 
-       }
-       return;
+      
 }
  // -- done hiding from old browsers -->
 </SCRIPT>
